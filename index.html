@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>GitHub</h1>
+            <div class="github-pesquisa">
+                <!-- <label for="input">Usuário do github</label> -->
+                <input type="text" name="input" id="input" placeholder="Usuários do github">
+                <button>&plus;</button>
+            </div>
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>Repositório</th>
+                    <th>Seguidores</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="usuario">
+                        <img src="http://github.com/tiago-nascimento-hilario.png" alt="">
+                        <a href="http://github.com/tiago-nascimento-hilario" target="_blank">
+                            <p>Tiago Nascimento Hilario</p>
+                            <span>Tiago</span>
+                        </a>
+                    </td>
+                    <td class="repositorios">10</td>
+                    <td class="seguidores">10</td>
+                    <td class="remover">&times;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

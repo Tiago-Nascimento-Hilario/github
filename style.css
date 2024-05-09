@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+
+    font-size: 62%;
+    --fonte-primaria: 'Times New Roman', Times, serif;
+    --cor-texto: #303030;
+    
+    --cor-primaria:#B7D9EB;
+
+}
+
+body{
+    font-size: 1.6rem;
+    color: var(--cor-texto);
+
+}
+body *{
+    font-family: var(--fonte-primaria);
+}
+button{
+    background-color: var(--cor-primaria);
+    border-radius: 0 .4rem .4rem 0;
+    height: 3.2rem;
+    border: none;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+button:hover{
+    filter: brightness(1.1);
+}
+
+#app{
+    padding: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2.5rem 0;
+}
+header h1{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+
+}
+.github-pesquisa{
+    display: flex;
+    align-items: center;
+}
+input{
+    height: 3.2rem;
+    border: 1px solid #ccc;
+    border-radius: .4 0 0 .4rem;
+    padding: 0 .8rem;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+    box-shadow: 0 1rem 2rem -1rem rgba(0,0,0, 0.3);
+}
+ table *{
+    font-size: 1.4rem;
+    color: var(--cor-texto);
+ }
+ table th{
+    background-color: var(--cor-primaria);
+    text-align: left;
+    font-weight: normal;
+    padding: 1.5rem;
+
+ }
+
+ table th:first-child{
+    border-top-left-radius: .4rem;
+ }
+ table th:last-child{
+    border-top-right-radius: .4rem;
+ }
+
+ table td{
+    padding: 1.5rem;
+    text-align: left;
+ }
+
+ table tr:nth-child(odd){
+    background-color: #DDD;
+ }
+
+ table tr:nth-child(even){
+    background-color: #EEE;
+ }
+ .usuario{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+ }
+
+ img{
+    width: 5rem;
+    height: 5rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+ } 
+
+.usuario a{
+    text-decoration: none;
+ }
+.usuario a p {
+    font-weight: bold;
+} 
+.remover{
+    background-color: none;
+    border: none;
+    color: red;
+}
